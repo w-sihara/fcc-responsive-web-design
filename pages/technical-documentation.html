@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        freeCodeCamp Responsive Web Design Technical Documentation Page
+    </title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/fcc-projects-favicon.png">
+    <link rel="stylesheet" type="text/css" href="../styles/technical-documentation.css">
+
+    <style>
+        #homepage {
+            background-color: var(--color-bg-primary);
+            border: 2px solid var(--color-border-primary);
+            bottom: var(--space-5);
+            color: var(--color-text-primary);
+            cursor: pointer;
+            font-size: var(--text-base);
+            font-weight: var(--font-semibold);
+            padding: var(--space-3) var(--space-5);
+            position: fixed;
+            right: var(--space-5);
+            text-decoration: none;
+            text-transform: lowercase;
+        }
+
+        #homepage:hover {
+            background-color: var(--color-bg-hover);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- return to homepage link -->
+    <a href="/index.html" id="homepage">&lt;Home/&gt;</a>
+
+    <!-- header -->
+    <header>
+        <nav id="navbar">
+            <header>
+                <h1>Introduction to JavaScript ES6 Features</h1>
+            </header>
+
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#let_and_const">let and const</a></li>
+                <li><a class="nav-link" href="#Arrow_Functions">Arrow Functions</a></li>
+                <li><a class="nav-link" href="#Template_Literals">Template Literals</a></li>
+                <li><a class="nav-link" href="#Destructuring_Assignment">Destructuring Assignment</a></li>
+                <li><a class="nav-link" href="#Spread_and_Rest_Operators">Spread and Rest Operators</a></li>
+                <li><a class="nav-link" href="#Default_Parameters">Default Parameters</a></li>
+                <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main id="main-doc">
+        <!-- main section -->
+        <section id="Introduction" class="main-section">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+
+            <p>
+                ES6 (ECMAScript 2015) introduced new features that made JavaScript more powerful, readable, and
+                efficient. This documentation covers key ES6 features, including <code>let</code> and
+                <code>const</code>, arrow functions, template literals, destructuring, and more.
+            </p>
+
+            <p>
+                These enhancements not only simplify the syntax but also provide more flexibility in how developers
+                approach coding tasks. Features like the spread operator and default parameters offer a more concise and
+                expressive way to handle arrays, objects, and function arguments. The introduction of modules also
+                promotes better code organization and reuse, allowing for more scalable application development. By
+                adopting these ES6 features, developers can write cleaner, more intuitive code that is easier to debug
+                and maintain, paving the way for more robust and high-performance web applications.
+            </p>
+        </section>
+
+        <!-- main section -->
+        <section id="let_and_const" class="main-section">
+            <header>
+                <h2>let and const</h2>
+            </header>
+
+            <p>
+                Before ES6, JavaScript used <code>var</code> for variable declarations. ES6 introduced <code>let</code>
+                and <code>const</code> for better scoping.
+            </p>
+
+            <code style="display: block;">
+                let name = "Alice"; // Can be reassigned 
+                <br>
+                const age = 30; // Cannot be reassigned 
+            </code>
+
+            <ul>
+                <li><code>let</code> allows block-scoped variables.</li>
+                <li><code>const</code> is used for values that should not change.</li>
+            </ul>
+        </section>
+
+        <!-- main section -->
+        <section id="Arrow_Functions" class="main-section">
+            <header>
+                <h2>Arrow Functions</h2>
+            </header>
+
+            <p>Arrow functions provide a shorter syntax for writing functions.</p>
+
+            <code style="display: block;">
+                const add = (a, b) => a + b;
+                <br>
+                console.log(add(2, 3)); // Output: 5
+            </code>
+
+            <ul>
+                <li>No need for the <code>function</code> keyword.</li>
+                <li>The <code>this</code> keyword is lexically bound.</li>
+            </ul>
+        </section>
+
+        <!-- main section -->
+        <section id="Template_Literals" class="main-section">
+            <header>
+                <h2>Template Literals</h2>
+            </header>
+
+            <p>Template literals allow multi-line strings and embedded expressions.</p>
+
+            <code style="display: block;">
+                const name = "Alice";
+                <br>
+                console.log(`Hello, ${name}!`); // Output: Hello, Alice!
+            </code>
+
+            <ul>
+                <li>Uses backticks (<code>`</code>) instead of quotes.</li>
+                <li>Supports placeholders using <code>${expression}</code>.</li>
+            </ul>
+        </section>
+
+        <!-- main section -->
+        <section id="Destructuring_Assignment" class="main-section">
+            <header>
+                <h2>Destructuring Assignment</h2>
+            </header>
+
+            <p>Destructuring makes it easier to extract values from arrays and objects.</p>
+
+            <code style="display: block;">
+                const person = { name: "Alice", age: 30 };
+                <br>
+                const { name, age } = person;
+                <br>
+                console.log(name, age); // Output: Alice 30
+            </code>
+
+            <ul>
+                <li>Works with both arrays and objects.</li>
+                <li>Improves readability and efficiency.</li>
+            </ul>
+        </section>
+
+        <!-- main section -->
+        <section id="Spread_and_Rest_Operators" class="main-section">
+            <header>
+                <h2>Spread and Rest Operators</h2>
+            </header>
+
+            <p>
+                The spread operator (<code>...</code>) expands elements, while the rest operator collects them.
+            </p>
+
+            <code style="display: block;">
+                const numbers = [1, 2, 3];
+                <br>
+                const newNumbers = [...numbers, 4, 5];
+                <br>
+                console.log(newNumbers); // Output: [1, 2, 3, 4, 5]
+            </code>
+
+            <ul>
+                <li><code>...</code> expands arrays or objects.</li>
+                <li>Useful for function parameters and cloning arrays/objects.</li>
+            </ul>
+        </section>
+
+        <!-- main section -->
+        <section id="Default_Parameters" class="main-section">
+            <header>
+                <h2>Default Parameters</h2>
+            </header>
+
+            <p>Functions can now have default parameter values.</p>
+
+            <code style="display: block;">
+                function greet(name = "Guest") {
+                <br>
+                  console.log(`Hello, ${name}!`);
+                <br>
+                }
+                <br>
+                greet(); // Output: Hello, Guest!                  
+            </code>
+
+            <ul>
+                <li>Provides fallback values when arguments are missing.</li>
+            </ul>
+        </section>
+
+        <!-- main section -->
+        <section id="Conclusion" class="main-section">
+            <header>
+                <h2>Conclusion</h2>
+            </header>
+
+            <p>
+                ES6 introduced several enhancements that improve JavaScript development. Understanding and using these
+                features will help you write cleaner, more efficient code.
+            </p>
+
+            <p>
+                For more information visit <a href="https://ecma-international.org/"
+                    target="_blank">https://ecma-international.org/</a>.
+            </p>
+
+            <div class="flex-container">
+                <div class="grid-item">
+                    <a href="https://ecma-international.org/" target="_blank">
+                        <img src="https://us1.discourse-cdn.com/openai1/original/4X/5/1/c/51c6131fd861856d63253aa6dcad2849170495d2.png"
+                            alt="" style="display: block; width: 50px; height: auto;">
+                    </a>
+                </div>
+                <div class="flex-item">
+                    <a href="https://ecma-international.org/" target="_blank">
+                        <img src="https://static-00.iconduck.com/assets.00/es6-icon-2048x2048-q58coldj.png" alt=""
+                            style="display: block; width: 45px; height: auto;">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <!-- copyright -->
+        <p>
+            <small>
+                © 2025 <a id="profile-link" href="https://github.com/w-sihara" target="_blank">w-sihara</a>
+            </small>
+        </p>
+
+        <!-- MIT license -->
+        <p>
+            <small>
+                Code Licensed under the MIT License, which allows others to freely use, modify, and distribute the
+                code,
+                provided proper credit is given.
+            </small>
+        </p>
+
+        <!-- CC BY-NC 4.0 license -->
+        <p>
+            <small>
+                Content Licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+                    target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0
+                    License)</a>. You may share and adapt the content for non-commercial purposes, provided proper
+                credit is given.
+            </small>
+        </p>
+    </footer>
+</body>
+
+</html>
+
+<!-- 
+MIT License
+Copyright (c) 2025 w-sihara
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!-- 
+Tests 
+Complete:1. You should have a main element with an id of main-doc.
+Complete:2. You should have at least five section elements with a class of main-section.
+Complete:3. All of your .main-section elements should be section elements.
+Complete:4. You should have at least five .main-section elements that are descendants of #main-doc.
+Complete:5. The first child of each .main-section should be a header element.
+Complete:6. None of your header elements should be empty.
+Complete:7. All of your .main-section elements should have an id.
+Complete:8. Each .main-section should have an id that matches the text of its first child, having any spaces in the child's text replaced with underscores (_) for the id's.
+Complete:9. You should have at least 10 p elements (total) within your .main-section elements.
+Complete:10. You should have at least five code elements that are descendants of .main-section elements.
+Complete:11. You should have at least five li elements that are descendants of .main-section elements.
+Complete:12. You should have a nav element with an id of navbar.
+Complete:13. Your #navbar should have exactly one header element within it.
+Complete:14. You should have at least one a element with a class of nav-link.
+Complete:15. All of your .nav-link elements should be anchor (a) elements.
+Complete:16. All of your .nav-link elements should be in the #navbar.
+Complete:17. You should have the same number of .nav-link and .main-section elements.
+Complete:18. The header element in the #navbar should come before any link (a) elements also in the #navbar.
+Complete:19. Each .nav-link should have text that corresponds to the header text of its related section (e.g. if you have a "Hello world" section/header, your #navbar should have a .nav-link which has the text "Hello world").
+Complete:20. Each .nav-link should have an href attribute that links to its corresponding .main-section (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id).
+Complete:21. Your #navbar should always be on the left edge of the window.
+Complete:22. Your Technical Documentation project should use at least one media query.
+-->

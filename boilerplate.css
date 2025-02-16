@@ -1,0 +1,113 @@
+/* imports */
+@import url();
+@import url();
+@import url();
+
+/* root variables */
+:root {
+  /* font family */
+  --font-body: ""; /* body text font */
+  --font-heading: ""; /* primary headings */
+  --font-subheading: ""; /* secondary headings */
+  --font-mono: ""; /* code font */
+
+  /* font size */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+  --text-7xl: 4.5rem; /* 72px */
+  --text-8xl: 6rem; /* 96px */
+  --text-9xl: 8rem; /* 128px */
+
+  /* font weight */
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* colors */
+  --color-bg-hover: ;
+  --color-bg-primary: ;
+  --color-bg-secondary: ;
+
+  --color-border-primary: ;
+
+  --color-text-link: ;
+  --color-text-muted: ;
+  --color-text-primary: ;
+  --color-text-secondary: ;
+
+  /* spacing */
+  --space-0: 0;
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+  --space-32: 8rem; /* 128px */
+
+  /* border radius */
+  --radius-none: 0;
+  --radius-sm: 0.125rem; /* 2px */
+  --radius: 0.25rem; /* 4px */
+  --radius-md: 0.375rem; /* 6px */
+  --radius-lg: 0.5rem; /* 8px */
+  --radius-xl: 0.75rem; /* 12px */
+  --radius-2xl: 1rem; /* 16px */
+  --radius-3xl: 1.5rem; /* 24px */
+  --radius-full: 9999px; /* fully rounded */
+
+  /* breakpoints */
+  --breakpoint-sm: 640px /* small devices */	
+  --breakpoint-md: 768px /* tablet */
+  --breakpoint-lg: 1024px /* desktop */	
+  --breakpoint-xl: 1280px /* large desktop */	
+  --breakpoint-2xl: 1536px  /* extra large screens */
+}
+
+/* universal selector */
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+/* media query breakpoints */
+@media (min-width: 640px) {
+  /* styles for screen widths >= 640px sm */
+}
+  
+@media (min-width: 768px) {
+  /* styles for screen widths >= 768px md */
+}
+  
+@media (min-width: 1024px) {
+  /* styles for screen widths >= 1024px lg */
+}
+  
+@media (min-width: 1280px) {
+  /* styles for screen widths >= 1280px xl */
+}
+  
+@media (min-width: 1536px) {
+  /* styles for screen widths >= 1536px 2xl */
+}

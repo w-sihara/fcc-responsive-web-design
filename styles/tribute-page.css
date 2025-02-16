@@ -1,0 +1,212 @@
+/* imports */
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"); /* "Playfair Display", serif */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"); /* "Merriweather", serif */
+
+/* root variables */
+:root {
+  /* font family */
+  --font-body: "Merriweather", serif;
+  --font-heading: "Playfair Display", serif;
+  --font-subheading: "Playfair Display", serif;
+
+  /* font size */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+  --text-7xl: 4.5rem; /* 72px */
+  --text-8xl: 6rem; /* 96px */
+  --text-9xl: 8rem; /* 128px */
+
+  /* font weight */
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* colors */
+  --color-bg-hover: var(--color-bg-secondary);
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f5f5f5;
+
+  --color-border-primary: #333333;
+
+  --color-text-link: var(--color-text-primary);
+  --color-text-muted: #d3d3d3;
+  --color-text-primary: #333333;
+  --color-text-secondary: #ffffff;
+
+  /* spacing */
+  --space-0: 0;
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+  --space-32: 8rem; /* 128px */
+
+  /* border radius */
+  --radius-none: 0;
+  --radius-sm: 0.125rem; /* 2px */
+  --radius: 0.25rem; /* 4px */
+  --radius-md: 0.375rem; /* 6px */
+  --radius-lg: 0.5rem; /* 8px */
+  --radius-xl: 0.75rem; /* 12px */
+  --radius-2xl: 1rem; /* 16px */
+  --radius-3xl: 1.5rem; /* 24px */
+  --radius-full: 9999px; /* fully rounded */
+}
+
+/* universal selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  margin: auto;
+  max-width: 100%;
+  text-align: left;
+  width: 85%;
+}
+
+main {
+  margin: var(--space-6) 0;
+}
+
+h1,
+h2 {
+  font-weight: var(--font-normal);
+  margin: var(--space-8) 0;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--font-subheading);
+  font-size: var(--text-lg);
+  text-align: left;
+}
+
+p {
+  margin: var(--space-5) 0;
+}
+
+a {
+  color: var(--color-text-link);
+  font-weight: var(--font-semibold);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: var(--space-3) 0;
+}
+
+figure {
+  margin: var(--space-6) 0;
+}
+
+figcaption {
+  font-size: var(--text-xs);
+  text-align: center;
+}
+
+/* footer */
+footer {
+  font-size: var(--text-xs);
+  margin: var(--space-10) 0;
+  text-align: left;
+}
+
+footer p {
+  margin: var(--space-4) 0;
+}
+
+#tribute-link {
+  font-style: italic;
+}
+
+/* media query breakpoints */
+@media (min-width: 640px) {
+  /* styles for screen widths >= 640px sm */
+  body {
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* styles for screen widths >= 768px md */
+  body {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* styles for screen widths >= 1024px lg */
+  body {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* styles for screen widths >= 1280px xl */
+  body {
+    width: 40%;
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+  }
+}
+
+@media (min-width: 1536px) {
+  /* styles for screen widths >= 1536px 2xl */
+  body {
+    width: 40%;
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+  }
+}

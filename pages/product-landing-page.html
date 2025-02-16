@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        freeCodeCamp Responsive Web Design Product Landing Page
+    </title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/fcc-projects-favicon.png">
+    <link rel="stylesheet" type="text/css" href="../styles/product-landing-page.css">
+
+    <style>
+        #homepage {
+            background-color: var(--color-bg-quaternary);
+            border: 2px solid var(--color-border-primary);
+            bottom: var(--space-5);
+            color: var(--color-text-primary);
+            cursor: pointer;
+            font-size: var(--text-sm);
+            font-weight: var(--font-semibold);
+            padding: var(--space-3) var(--space-5);
+            position: fixed;
+            right: var(--space-5);
+            text-decoration: none;
+            text-transform: lowercase;
+        }
+
+        #homepage:hover {
+            background-color: var(--color-bg-hover);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- return to homepage link -->
+    <a href="/index.html" id="homepage">&lt;Home/&gt;</a>
+
+    <!-- header -->
+    <header id="header">
+        <!-- header image -->
+        <img id="header-img"
+            src="https://www.coca-cola.com/content/dam/onexp/us/en/brands/sprite/en_sprite_logo_green-text-only_477x180.png"
+            alt="The Coca-Cola Company logo" style="display: block; max-width: 10rem; height: auto; margin: 1.25rem 0;">
+
+        <!-- nav bar -->
+        <nav id="nav-bar">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#products">Products</a>
+            <a class="nav-link" href="#video-section" hidden aria-hidden="true">Obey Your Thirst</a>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- section: video -->
+        <section id="video-section" class="main-section">
+            <div class="video-container">
+                <!-- iframe -->
+                <iframe id="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/LDsLM8KjPLE?si=RkcQQUdHlAW345lg" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- section: home -->
+        <section id="home" class="main-section">
+            <header class="section-header" style="margin: var(--space-6) 0;">
+                What's New With Sprite
+            </header>
+
+            <!-- grid: Obey Your Thirst -->
+            <div class="grid-container">
+                <!-- grid item 1 -->
+                <div class="grid-item" style="background-color: var(--color-transparent);">
+                    <img src="https://www.coca-cola.com/content/dam/onexp/us/en/offerings/sprite-2024/obey-2025.png/width1024.png"
+                        alt="Obey Your Thirst"
+                        style="display: block; max-width: 100%; height: auto; border-radius: var(--radius-sm);">
+                </div>
+
+                <!-- grid item 2 -->
+                <div class="grid-item">
+                    <header class="section-header">
+                        Obey Your Thirst
+                    </header>
+                    <p>
+                        Never Miss A Moment - Sign up to be among the first to hear about exciting releases and updates
+                        from Sprite.
+                    </p>
+                    <!-- common button -->
+                    <a class="common-button" href="">Sign Up</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section: products -->
+        <section id="products" class="main-section">
+            <header class="section-header">
+                Products
+            </header>
+
+            <!-- product: Sprite® Original -->
+            <div class="grid-container">
+                <!-- grid item 1 -->
+                <div class="grid-item">
+                    <img src="https://www.coca-cola.com/content/dam/onexp/au/en/brands/sprite/new/03-08-2024/sprite.png/width1338.png"
+                        alt="Sprite® Original"
+                        style="display: block; max-width: 100%; height: auto; margin: var(--space-0) auto; border-radius: 2rem;">
+                </div>
+
+                <!-- grid item 2 -->
+                <div class="grid-item" style="background-color: transparent;">
+                    <h3>Sprite® Original</h3>
+                    <p>
+                        The OG, the flavor that started it all—classic, cool, crisp lemon-lime taste that's caffeine
+                        free with 100% natural flavors.
+                    </p>
+                    <p>
+                        <b>Available Sizes:</b> 7.5 fl oz, 8 fl oz, 12 fl oz, 13.2 fl oz, 16.9 fl oz, 20 fl oz, 1Liter,
+                        1.25 Liters, 2 Liters, 3 Liters
+                    </p>
+                    <!-- purchase button -->
+                    <a class="purchase-button" href="">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- product: Sprite® Zero Sugar -->
+            <div class="grid-container">
+                <!-- grid item 1 -->
+                <div class="grid-item">
+                    <img src="https://www.coca-cola.com/content/dam/onexp/au/en/brands/sprite/new/03-08-2024/sprite_zero_sugar.png/width1338.png"
+                        alt="Sprite® Zero Sugar"
+                        style="display: block; max-width: 100%; height: auto; margin: var(--space-0) auto; border-radius: 2rem;">
+                </div>
+
+                <!-- grid item 2 -->
+                <div class="grid-item" style="background-color: transparent;">
+                    <h3>Sprite® Zero Sugar</h3>
+                    <p>
+                        Who says you can't do more with less? The iconic great taste of Sprite with zero sugar.
+                    </p>
+                    <p>
+                        <b>Available Sizes:</b> 7.5 fl oz, 12 fl oz, 16.9 fl oz, 20 fl oz, 2 Liters
+                    </p>
+                    <!-- purchase button -->
+                    <a class="purchase-button" href="">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- product: Sprite® Chill -->
+            <div class="grid-container">
+                <!-- grid item 1 -->
+                <div class="grid-item">
+                    <img src="https://www.coca-cola.com/content/dam/onexp/au/en/brands/sprite/new/03-08-2024/sprite_lemon_plus.png/width1338.png"
+                        alt="Sprite® Lemon Plus"
+                        style="display: block; max-width: 100%; height: auto; margin: var(--space-0) auto; border-radius: 2rem;">
+                </div>
+
+                <!-- grid item 2 -->
+                <div class="grid-item" style="background-color: transparent;">
+                    <h3>Sprite® Lemon Plus</h3>
+                    <p>
+                        Sprite LEMON+ delivers cut through refreshment. With added caffeine Sprite Lemon + helps to
+                        refresh your mind, so you can go back to being yourself and doing what you love.
+                    </p>
+                    <p>
+                        <b>Available Sizes:</b> 7.5 fl oz, 12 fl oz, 20 fl oz
+                    </p>
+                    <!-- purchase button -->
+                    <a class="purchase-button" href="">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- product: Sprite® Chill Zero Sugar -->
+            <div class="grid-container">
+                <!-- grid item 1 -->
+                <div class="grid-item">
+                    <img src="https://www.coca-cola.com/content/dam/onexp/au/en/brands/sprite/new/Sprite%20Lemon%20Plus%20Zero%20Sugar%20can.jpg/width767.jpg"
+                        alt="Sprite® Lemon Plus Zero Sugar"
+                        style="display: block; max-width: 100%; height: auto; margin: var(--space-0) auto; border-radius: 2rem;">
+                </div>
+
+                <!-- grid item 2 -->
+                <div class="grid-item" style="background-color: transparent;">
+                    <h3>Sprite® Lemon Plus Zero Sugar</h3>
+                    <p>
+                        Sprite LEMON+ Zero sugar delivers cut through refreshment. With added caffeine Sprite Lemon +
+                        Zero Sugar helps refresh your mind, so you can go back to being yourself and doing what you
+                        love.
+                    </p>
+                    <p>
+                        <b>Available Sizes:</b> 12 fl oz
+                    </p>
+                    <!-- purchase button -->
+                    <a class="purchase-button" href="">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section: form -->
+        <section id="form-section" class="main-section">
+            <div class="grid-container">
+                <!-- grid item 1 -->
+                <div class="grid-item" style="background-color: transparent;">
+                    <header class="section-header">
+                        Stay cool with Sprite®
+                    </header>
+
+                    <p>Subscribe to receive news, promotions and exclusive content from Sprite.</p>
+
+                    <!-- form -->
+                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                        <!-- email input -->
+                        <input id="email" type="email" name="email" placeholder="Enter your email address"
+                            required="required" aria-label="Email Address" autocomplete="email">
+                        <!-- submit input -->
+                        <input id="submit" type="submit" value="submit">
+                    </form>
+                </div>
+
+                <!-- grid item 2 -->
+                <div class="grid-item" style="background-color: var(--color-transparent);">
+                    <img src="https://www.coca-cola.com/content/dam/onexp/global/central/offerings/sprite-spicy-club/card-sprite-spice-club-zs.png/width1960.png"
+                        alt="Stay cool with Sprite®"
+                        style="display: block; max-width: 100%; height: auto; margin: 2rem auto; border-radius: 2rem;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>
+            <small>
+                © 2025 The Coca-Cola Company®. All rights reserved. The Sprite® brand and The Coca-Cola Company® are
+                registered trademarks of The Coca-Cola Company.
+            </small>
+        </p>
+
+        <!-- copyright -->
+        <p>
+            <small>
+                © 2025 <a id="profile-link" href="https://github.com/w-sihara" target="_blank">w-sihara</a>
+            </small>
+        </p>
+
+        <!-- MIT license -->
+        <p>
+            <small>
+                Code Licensed under the MIT License, which allows others to freely use, modify, and distribute the
+                code,
+                provided proper credit is given.
+            </small>
+        </p>
+
+        <!-- CC BY-NC 4.0 license -->
+        <p>
+            <small>
+                Content Licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+                    target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0
+                    License)</a>. You may share and adapt the content for non-commercial purposes, provided
+                proper credit is given.
+            </small>
+        </p>
+    </footer>
+</body>
+
+</html>
+
+<!-- 
+MIT License
+Copyright (c) 2025 w-sihara
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!-- 
+Tests
+Complete:1. You should have a header element with an id of header.
+Complete:2. You should have an img element with an id of header-img.
+Complete:3. Your #header-img should be a descendant of the #header.
+Complete:4. Your #header-img should have a src attribute.
+Complete:5. Your #header-img’s src value should be a valid URL (starts with http).
+Complete:6. You should have a nav element with an id of nav-bar.
+Complete:7. Your #nav-bar should be a descendant of the #header.
+Complete:8. You should have at least 3 .nav-link elements within the #nav-bar.
+Complete:9. Each .nav-link element should have an href attribute.
+Complete:10. Each .nav-link element should link to a corresponding element on the landing page (has an href with a value of another element's id. e.g. #footer).
+Complete:11. You should have a video or iframe element with an id of video.
+Complete:12. Your #video should have a src attribute.
+Complete:13. You should have a form element with an id of form.
+Complete:14. You should have an input element with an id of email.
+Complete:15. Your #email should be a descendant of the #form.
+Complete:16. Your #email should have the placeholder attribute with placeholder text.
+Complete:17. Your #email should use HTML5 validation by setting its type to email.
+Complete:18. You should have an input element with an id of submit.
+Complete:19. Your #submit should be a descendant of the #form.
+Complete:20. Your #submit should have a type of submit.
+Complete:21. Your #form should have an action attribute of https://www.freecodecamp.com/email-submit.
+Complete:22. Your #email should have a name attribute of email.
+Complete:23. Your #nav-bar should always be at the top of the viewport.
+Complete:24. Your Product Landing Page should use at least one media query.
+Complete:25. Your Product Landing Page should use CSS Flexbox at least once.
+-->
